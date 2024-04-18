@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(6, 6, 49);
+    padding: 5px 50px;
+
+}
+
+.max-width {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none ;
+    font-weight: bolder;
+}
+
+.logo span {
+    color: goldenrod;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin-right: 130px;
+    margin-top: 3px;
+    
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.menu a:hover {
+    color: goldenrod;
+    font-size: 30px;
+}
+
+div.menu-btn, div.menu-btn2  {
+    font-size: 30px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+  .navbar .menu{
+    position: absolute;
+    text-align: center;
+    background-color: #000000c5;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+
+  div.menu-btn2 {
+    display: block;
+    width: 30px;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+  }
+
+div.menu-btn {
+    display: block;
+    margin-right: 100px;
+}
+
+
+
+#check:checked ~ .navbar .menu {
+    display: grid;
+}
+
+}
+
+
